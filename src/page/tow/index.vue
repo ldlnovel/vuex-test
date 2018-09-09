@@ -10,12 +10,16 @@
     > 
 
     </value-list>
+    <hr>
+    <drag-from>
+    </drag-from>
   </div>
 </template>
 
 <script>
 import { mapState, mapMutations } from "vuex";
-import valueList from '../../components/formlist/index.vue'
+import valueList from '../../components/formlist/index.vue' 
+import dragFrom from '../../components/dragFrom/index.vue'
 export default {
   name: 'one',
   data() {
@@ -51,7 +55,8 @@ export default {
   computed: { ///在更新前 能对 值 进行 改变
   },
   components: {
-    valueList
+    valueList,
+    dragFrom
   }
 }
 
